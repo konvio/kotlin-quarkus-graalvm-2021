@@ -1,0 +1,6 @@
+dist: bionic
+language: java
+sudo: required
+
+services:
+  - docker
