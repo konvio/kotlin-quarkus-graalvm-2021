@@ -1,7 +1,10 @@
-dist: xenial
-sudo: required
 language: java
+sudo: true
+dist: xenial
 jdk: openjdk8
 
 services:
   - docker
+
+before_install:
+  - chmod +x mvnw
