@@ -1,7 +1,6 @@
-dist: bionic
+dist: xenial
 sudo: required
 language: java
-jdk: oraclejdk8
 
 services:
   - docker
