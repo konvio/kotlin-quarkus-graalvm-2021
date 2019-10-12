@@ -6,5 +6,13 @@ jdk: openjdk8
 services:
   - docker
 
+env:
+  global:
+    - GIT_HASH=$(git rev-parse HEAD)
+
 before_install:
   - chmod +x mvnw
+
+script:
+  - ./mvnw package -Pnative -Dnative-image.docker-build=true
+  - docker build -f src/main/docker/Dockerfile.native -t konvio/kotlin-quarkus-graalvm .
