@@ -11,7 +11,7 @@ open class ExampleResourceTest {
     @Test
     fun testHelloEndpoint() {
         given()
-          .`when`().get("/hello")
+          .`when`().get("/helloo")
           .then()
              .statusCode(200)
              .body(`is`("hello"))
