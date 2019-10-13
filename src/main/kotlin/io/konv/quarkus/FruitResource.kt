@@ -13,7 +13,7 @@ class FruitResource {
     private val fruits: MutableSet<Fruit> = Collections.synchronizedSet(HashSet())
 
     init {
-        fruits.add(Fruit("Apple", "Winter fruit"))
+        fruits.add(Fruit("Apple34", "Winter fruit"))
         fruits.add(Fruit("Pineapple", "Tropical fruit"))
     }
 
