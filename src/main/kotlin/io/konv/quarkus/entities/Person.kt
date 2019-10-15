@@ -2,7 +2,6 @@ package io.konv.quarkus.entities
 
 import javax.persistence.*
 
-@Entity
 class Person {
 
     @Id
